@@ -1,4 +1,3 @@
-from datetime import datetime
 from typing import Any
 
 
@@ -8,7 +7,6 @@ class Node:
         self.value = value
         self.prev = prev
         self.next = next
-        self.timestamp = datetime.utcnow()
 
     def __str__(self):
         return f"[{self.key}: {self.value}] -> {self.next}"
